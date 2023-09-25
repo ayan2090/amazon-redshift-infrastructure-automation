@@ -7,9 +7,9 @@ chmod +x ~/amazon-redshift-infrastructure-automation/scripts/shell_menu/menu-wel
 chmod +x ~/amazon-redshift-infrastructure-automation/scripts/shell_menu/miscdetails.sh
 
 cd ~/amazon-redshift-infrastructure-automation
-python3 -m venv .env
+PYTHONWARNINGS="ignore" python3 -m venv .env
 source .env/bin/activate
-echo "Installing requirements...."; pip install -r requirements.txt -q > /dev/null; echo " done."
+echo "Installing requirements...."; pip install -r requirements.txt > /dev/null; echo " done."
 #LINE='~/amazon-redshift-infrastructure-automation/scripts/restart_session.sh'
 #FILE=~/.bashrc
 #grep -qF -- "$LINE" "$FILE" || echo "$LINE" >> "$FILE"
